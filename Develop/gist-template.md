@@ -1,71 +1,34 @@
-# Title (replace with your title)
+# Regex Tutorial URL 
 
-Introductory paragraph (replace this with your text)
+## Your Task
 
-## Summary
+Developers write code, but they also *write about code*. Take a moment to search the web for tutorials about any of the subjects you’ve learned so far in this course. You’re likely to find thousands of tutorials written by developers of all skill levels, including junior developers&mdash;like yourself!
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Your assignment this week is to create a tutorial that explains how a specific regular expression, or regex, functions by breaking down each part of the expression and describing what it does. You'll use the template provided in the starter code to create your walkthrough.
 
-## Table of Contents
+## User Story
 
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+```md
+AS A web development student
+I WANT a tutorial explaining a specific regex
+SO THAT I can understand the search pattern the regex defines
+```
 
-## Regex Components
+## Acceptance Criteria
 
-### Anchors
+```md
+GIVEN a regex tutorial
+WHEN I open the tutorial
+THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
+WHEN I click on the links in the table of contents
+THEN I am taken to the corresponding sections of the tutorial
+WHEN I read through each section of the tutorial
+THEN I find a detailed explanation of what a specific component of the regex does
+WHEN I reach the end of the tutorial
+THEN I find a section about the author and a link to the author’s GitHub profile
+```
 
-Regex anchors are special characters used to match positions within a string, rather than matching actual characters. They do not consume any characters during the matching process. Anchors are essential for specifying where a pattern should occur in a text. The two most common anchors are:
+## Deployed GitHub-Gist Link:
+[Deployed GitHub-Gist Link: Click Here](https://gist.github.com/Bocabooii/5cf66906f672df47da48067e8c4d1df2)
 
-^ (caret) - The caret symbol is the start-of-line anchor. It is used to match the beginning of a string. For example, the regex ^abc would match the string "abc" only if it appears at the beginning of the text.
-
-$ (dollar sign) - The dollar sign is the end-of-line anchor. It is used to match the end of a string. For example, the regex abc$ would match the string "abc" only if it appears at the end of the text.
-
-Here are some examples to illustrate how anchors work:
-
-^hello matches "hello world" but not "world hello."
-world$ matches "hello world" but not "world hello."
-^hello$ matches "hello" exactly.
-
-### Quantifiers
-
-'?' (Question Mark): The question mark is a quantifier that makes the preceding character or group optional. In this regex, (https?:\/\/)? means that the "http://" or "https://" part is optional in the URL.
-
-'+ (Plus): The plus sign is a quantifier that matches one or more occurrences of the preceding character or group. For example, [\da-z\.-]+ means matching one or more alphanumeric characters, dots, or hyphens in the subdomain part of the URL.'
-
-{2,6} (Curly Braces): The curly braces indicate a range quantifier. In this case, [a-z\.]{2,6} means matching a sequence of lowercase letters and dots, with a length between 2 and 6 characters. This is used to match the top-level domain (TLD) like ".com," ".org," etc.
-
-'* (Asterisk): The asterisk is a quantifier that matches zero or more occurrences of the preceding character or group. For example, ([\/\w \.-]*)* means matching zero or more occurrences of characters like slashes, alphanumeric characters, spaces, dots, or hyphens in the path of the URL.'
-
-Each of these quantifiers helps define the flexibility and structure of the URL pattern. The regex allows variations in the URL, such as optional "http://" or "https://" prefixes, subdomains, and varying path segments. However, it's important to note that this regex may not cover all possible URL formats and may not be a complete solution for URL validation. URL parsing and validation can be complex, and in some cases, it's better to use specialized libraries or tools for URL handling.
-
-### OR Operator
-
-### Character Classes
-
-### Flags
-
-### Grouping and Capturing
-
-### Bracket Expressions
-
-### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
-## Author
-
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+![Alt text](image.png)
