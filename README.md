@@ -33,4 +33,4 @@ THEN I find a section about the author and a link to the author’s GitHub profi
 ## Deployed GitHub-Gist Link:
 [Deployed GitHub-Gist Link: Click Here](https://gist.github.com/Bocabooii/5cf66906f672df47da48067e8c4d1df2)
 
-![Alt text](/Develop/image.png)
+![Alt text](./Develop/image.png)
