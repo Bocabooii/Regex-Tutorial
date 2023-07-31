@@ -24,6 +24,18 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Regex anchors are special characters used to match positions within a string, rather than matching actual characters. They do not consume any characters during the matching process. Anchors are essential for specifying where a pattern should occur in a text. The two most common anchors are:
+
+^ (caret) - The caret symbol is the start-of-line anchor. It is used to match the beginning of a string. For example, the regex ^abc would match the string "abc" only if it appears at the beginning of the text.
+
+$ (dollar sign) - The dollar sign is the end-of-line anchor. It is used to match the end of a string. For example, the regex abc$ would match the string "abc" only if it appears at the end of the text.
+
+Here are some examples to illustrate how anchors work:
+
+^hello matches "hello world" but not "world hello."
+world$ matches "hello world" but not "world hello."
+^hello$ matches "hello" exactly.
+
 ### Quantifiers
 
 ### OR Operator
