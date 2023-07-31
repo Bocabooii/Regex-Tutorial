@@ -38,6 +38,16 @@ world$ matches "hello world" but not "world hello."
 
 ### Quantifiers
 
+'?' (Question Mark): The question mark is a quantifier that makes the preceding character or group optional. In this regex, (https?:\/\/)? means that the "http://" or "https://" part is optional in the URL.
+
+'+ (Plus): The plus sign is a quantifier that matches one or more occurrences of the preceding character or group. For example, [\da-z\.-]+ means matching one or more alphanumeric characters, dots, or hyphens in the subdomain part of the URL.'
+
+{2,6} (Curly Braces): The curly braces indicate a range quantifier. In this case, [a-z\.]{2,6} means matching a sequence of lowercase letters and dots, with a length between 2 and 6 characters. This is used to match the top-level domain (TLD) like ".com," ".org," etc.
+
+'* (Asterisk): The asterisk is a quantifier that matches zero or more occurrences of the preceding character or group. For example, ([\/\w \.-]*)* means matching zero or more occurrences of characters like slashes, alphanumeric characters, spaces, dots, or hyphens in the path of the URL.'
+
+Each of these quantifiers helps define the flexibility and structure of the URL pattern. The regex allows variations in the URL, such as optional "http://" or "https://" prefixes, subdomains, and varying path segments. However, it's important to note that this regex may not cover all possible URL formats and may not be a complete solution for URL validation. URL parsing and validation can be complex, and in some cases, it's better to use specialized libraries or tools for URL handling.
+
 ### OR Operator
 
 ### Character Classes
